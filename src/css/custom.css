@@ -6,25 +6,77 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --ifm-color-primary: #2e8555;
+    --ifm-color-primary-dark: #29784c;
+    --ifm-color-primary-darker: #277148;
+    --ifm-color-primary-darkest: #205d3b;
+    --ifm-color-primary-light: #33925d;
+    --ifm-color-primary-lighter: #359962;
+    --ifm-color-primary-lightest: #3cad6e;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+[data-theme="dark"] {
+    --ifm-color-primary: #f9a72f;
+    --ifm-color-primary-dark: #f89b12;
+    --ifm-color-primary-darker: #f59407;
+    --ifm-color-primary-darkest: #c97a06;
+    --ifm-color-primary-light: #fab34c;
+    --ifm-color-primary-lighter: #fab95a;
+    --ifm-color-primary-lightest: #fbcc85;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hero__title {
+    font-size: 6em;
+    background-image: linear-gradient(#fec527, #f4753f);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.hero__subtitle {
+    background-image: linear-gradient(#e6e6e6, #a0a0a0);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.button-get-started {
+    font-size: 1em;
+    font-weight: 400;
+    border: 1px solid #f4a42e;
+    color: #dfdfdf !important;
+    background-color: transparent;
+}
+
+.button-get-started:hover {
+    background-color: #f4a42e;
+    color: #fff !important;
+}
+
+.button-documentation {
+    font-size: 1em;
+    font-weight: 400;
+    border: 1px solid #3e3e3e;
+    color: #eaeaea !important;
+    background-color: #2e2e2e;
+}
+
+.button-documentation:hover {
+    border-color: #444444;
+    background-color: #353535;
+    color: #fff !important;
 }

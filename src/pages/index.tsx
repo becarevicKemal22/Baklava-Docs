@@ -16,11 +16,16 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <div className="buttonContainer">
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg button-get-started"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Započni ovdje 🚀
+          </Link>
+          <Link
+            className="button button--secondary button--lg button-documentation"
+            to="/docs/intro">
+            Dokumentacija
           </Link>
         </div>
       </div>
